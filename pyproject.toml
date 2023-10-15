@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mordred-gui"
+version = "0.1.0"
+description = ""
+authors = ["research11111 <urgent.research@mailo.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+pyqt6 = "^6.5.2"
+mordredcommunity = "^2.0.3"
+pandas = "^2.1.1"
+biodeg = { git = "https://github.com/research11111/biodeg.git", branch = "main" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+mordred-gui = 'mordred_gui.main:main'
